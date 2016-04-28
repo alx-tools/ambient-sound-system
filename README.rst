@@ -2,6 +2,16 @@ Introduction
 ============
 Ambient Sound System is an application built to project media files to Chromecast devices. It is currently in development.
 
+Requirements
+============
+
+1. Espeak - Mac: ``brew install espeak`` Linux: ``sudo apt-get install espeak``
+2. Lame - Mac: ``brew install lame`` Linux: ``sudo apt-get install lame``
+3. PostgreSQL (DB=ambient, USER=ambient)
+4. Ruby 2.2.4
+5. Ruby on Rails 4.2.6
+6. Bundle ``gem install bundle``
+
 Setup with a local server
 =========================
 
