@@ -36,6 +36,13 @@ class AudiosController < ApplicationController
         format.html { redirect_to @audio, notice: 'Audio was successfully created.' }
         format.json { render :show, status: :created, location: @audio }
         @speech.save("public/audio/ass.mp3") # invokes espeak + lame
+
+        # !!! This calls a shell command to run docker and castnow, the arguments need to be adjusted for each machine that runs the rails app. 
+        @err = system('docker run -it --rm johnserrano/castnow castnow --address 192.168.1.249 http://192.168.1.136:8000/public/audio/ass.mp3')
+        if @err == false
+          print "Command failed"
+        end
+
       else
         format.html { render :new }
         format.json { render json: @audio.errors, status: :unprocessable_entity }
