@@ -1,9 +1,27 @@
+// Import theme fonts and set as variables.
+@import url(https://fonts.googleapis.com/css?family=Courgette|Raleway:400,700);
+$font-primary: Raleway, arial, helvetica, sans-serif;
+$font-secondary: Courgette, arial, helvetica, sans-serif;
+
+// Color pallete located at http://www.colourlovers.com/palette/92095/Giant_Goldfish.
+$blue: #69D2E7;
+$paleblue: #A7DBD8;
+$palegreen: #E0E4CC;
+$paleorange: #F38630;
+$orange: #FA6900;
+
 body {
-  background-color: #fff;
+  background-color: white;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: $font-primary;
   font-size: 13px;
   line-height: 18px;
+
+  .title {
+    font-family: $font-secondary;
+    font-size: 3em;
+    color: $paleblue;
+  }
 }
 
 p, ol, ul, td {
