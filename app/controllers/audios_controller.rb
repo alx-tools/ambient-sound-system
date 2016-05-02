@@ -37,11 +37,10 @@ class AudiosController < ApplicationController
         format.json { render :show, status: :created, location: @audio }
         @speech.save("public/audio/ass.mp3") # invokes espeak + lame
 
-        # !!! This calls a shell command to run docker and castnow, the arguments need to be adjusted for each machine that runs the rails app. 
-        @err = system('docker run -it --rm johnserrano/castnow castnow --address 192.168.1.249 http://192.168.1.136:8000/public/audio/ass.mp3')
-        if @err == false
-          print "Command failed"
-        end
+        # Three threads for three chromecasts. final argument's ip needs to be changed to appropriate server machine's external ip.
+        @err1 = Thread.new{ @cast1 = `castnow --address 10.0.190.83 http://10.0.190.38:9292/audio/ass.mp3`}
+        @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 http://10.0.190.38:9292/audio/ass.mp3`}
+        @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 http://10.0.190.38:9292/audio/ass.mp3`}
 
       else
         format.html { render :new }
