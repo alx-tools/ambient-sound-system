@@ -37,7 +37,7 @@ class AudiosController < ApplicationController
         format.json { render :show, status: :created, location: @audio }
         @speech.save("public/audio/ass.mp3") # invokes espeak + lame
 
-        # Three threads for three chromecasts. final argument's ip needs to be changed to appropriate server machine's external ip.
+        # Three threads for three chromecasts. CHANGE THE --address IP TO YOUR MACHINE'S EXTERNAL IP
         @err1 = Thread.new{ @cast1 = `castnow --address 10.0.190.83 http://10.0.190.38:9292/audio/ass.mp3`}
         @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 http://10.0.190.38:9292/audio/ass.mp3`}
         @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 http://10.0.190.38:9292/audio/ass.mp3`}
@@ -46,6 +46,26 @@ class AudiosController < ApplicationController
         format.html { render :new }
         format.json { render json: @audio.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def ass_bot
+
+    @speech = Speech.new(params[:text])
+    @speech.speak # invokes espeak
+    @speech.save("public/audio/ass.mp3") # invokes espeak + lame
+
+    # CHANGE THE --address IP TO YOUR MACHINE'S EXTERNAL IP
+    @err1 = Thread.new{ @cast1 = `castnow --address 10.0.190.83 http://10.0.190.38:9292/audio/ass.mp3`}
+    @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 http://10.0.190.38:9292/audio/ass.mp3`}
+    @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 http://10.0.190.38:9292/audio/ass.mp3`}
+
+
+    respond_to do |format|
+      res = {
+          :text => "Success!"
+      }
+      format.json { render :json => res, :status => 200 }
     end
   end
 
