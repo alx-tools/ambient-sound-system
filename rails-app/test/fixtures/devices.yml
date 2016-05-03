@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  ip_host: MyString
+  device_type: MyString
+
+two:
+  location: MyString
+  ip_host: MyString
+  device_type: MyString
