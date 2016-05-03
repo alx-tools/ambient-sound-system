@@ -5,26 +5,18 @@ Ambient Sound System is an application built to project media files to Chromecas
 Requirements
 ============
 
-1. Espeak - Mac: ``brew install espeak`` Linux: ``sudo apt-get install espeak``
-2. Lame - Mac: ``brew install lame`` Linux: ``sudo apt-get install lame``
-3. PostgreSQL (DB=ambient, USER=ambient)
-4. Ruby 2.2.4
-5. Ruby on Rails 4.2.6
-6. Bundle ``gem install bundle``
+* Node - Mac: ``brew node`` Linux: ``sudo apt-get install node``.
+* Espeak and Lame - Mac: ``brew install espeak lame`` Linux: ``sudo apt-get install espeak lame``.
+* PostgreSQL (DB=ambient, USER=ambient). In the psql terminal run ``CREATE USER ambient;`` to create the user and then run ``GRANT ALL PRIVILEGES ON DATABASE ambient to ambient;`` to add correct privileges.
+* Ruby 2.3 (If you need to update Ruby, we recommend this tutorial: https://www.brightbox.com/blog/2016/01/06/ruby-2-3-ubuntu-packages/).
+* Ruby on Rails 4.2.6 by running ``sudo gem install rails -v 4.2.6``.
+* Bundle ``sudo gem install bundle``.
+* Install castnow globally ``sudo npm install castnow -g``.
 
 Setup with a local server
 =========================
 
-1. Clone the repository: ``https://github.com/bennettbuchanan/ambient-sound-system-rails``
-2. Change directories into the application ``cd https://github.com/bennettbuchanan/ambient-sound-system-rails``
+1. Clone the repository: ``https://github.com/bennettbuchanan/ambient-sound-system-rails``.
+2. Change directories into the application ``cd https://github.com/bennettbuchanan/ambient-sound-system-rails``.
 3. Run ``bundle install`` to install the dependencies.
-4. Start up a rails server: ``bundle exec rails server`` (By default, rails will run on localhost:3000.)
-
-Use with a Chromecast Device
-============================
-This application is built to work with a docker image. If you already have docker installed, skip to step 3.
-
-1. With Homebrew for OS X: run ``brew install docker`` to install docker.
-2. Install the Docker Toolbox here: https://www.docker.com/products/docker-toolbox.
-3. Pull the associated docker image with ``docker pull johnserrano/castnow``
-4. Run ``docker run -it --rm johnserrano/castnow castnow --address <Chromecast IP address> <path to file>`` to play the file.
+4. Start up a rails server: ``bundle exec rails server``. (By default, rails will run on localhost:3000.)

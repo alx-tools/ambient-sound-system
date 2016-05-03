@@ -11,11 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
-  </div>
-  <div class="actions">
-    <%= f.submit :"Create Audio" %>
+  <div class = "test">
+    <div class="field">
+      <%= f.text_field :text, :placeholder => "Say something" %>
+    </div>
+    <%= button_tag(type: 'submit', class: "actions btn btn-primary") do %>
+     <i class="glyphicon glyphicon-bullhorn"></i>
+    <% end %>
   </div>
 <% end %>
