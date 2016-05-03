@@ -11,17 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <p><%= f.label :text %><br>
-    <%= f.text_field :text %></p>
-    <% if @audio.id.present? # Only for the edit page %>
-      <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
-    <% else # Shows on the new audio page %>
-      <p><%= f.label 'Save?' %>
-      <%= f.check_box :store, {checked: false} %></p>
-    <% end %>
-  </div>
-  <div class="actions">
-    <%= f.submit :"Create Audio" %>
+  <div class="test">
+      <div class="field">
+      <p><%= f.label :text %><br>
+      <%= f.text_field :text, :placeholder => "Say something" %></p>
+      <% if @audio.id.present? # Only for the edit page %>
+        <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
+      <% else # Shows on the new audio page %>
+        <p><%= f.label 'Save?' %>
+        <%= f.check_box :store, {checked: false} %></p>
+      <% end %>
+    </div>
+  <%= button_tag(type: 'submit', class: "actions btn btn-primary") do %>
+   <i class="glyphicon glyphicon-bullhorn"></i>
   </div>
 <% end %>

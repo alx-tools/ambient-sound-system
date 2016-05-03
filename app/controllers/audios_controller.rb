@@ -51,6 +51,26 @@ class AudiosController < ApplicationController
     end
   end
 
+  def ass_bot
+
+    @speech = Speech.new(params[:text])
+    @speech.speak # invokes espeak
+    @speech.save("public/audio/ass.mp3") # invokes espeak + lame
+
+    # CHANGE THE --address IP TO YOUR MACHINE'S EXTERNAL IP
+    @err1 = Thread.new{ @cast1 = `castnow --address 10.0.190.83 http://10.0.190.38:9292/audio/ass.mp3`}
+    @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 http://10.0.190.38:9292/audio/ass.mp3`}
+    @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 http://10.0.190.38:9292/audio/ass.mp3`}
+
+
+    respond_to do |format|
+      res = {
+          :text => "Success!"
+      }
+      format.json { render :json => res, :status => 200 }
+    end
+  end
+
   # PATCH/PUT /audios/1
   # PATCH/PUT /audios/1.json
   def update
