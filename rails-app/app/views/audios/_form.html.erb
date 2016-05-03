@@ -7,6 +7,14 @@
      <i class="glyphicon glyphicon-bullhorn"></i>
     <% end %>
   </div>
+  <div class="checkbox">
+    <% if @audio.id.present? # Only for the edit page %>
+      <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
+    <% else # Shows on the new audio page %>
+      <p><%= f.label 'Save?' %>
+      <%= f.check_box :store, {checked: false} %></p>
+    <% end %>
+  </div>
 
   <% if @audio.errors.any? %>
     <div id="error_message">

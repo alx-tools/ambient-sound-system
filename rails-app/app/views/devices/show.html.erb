@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @device.location %><br>
+  <strong>IP or Hostname:</strong>
+  <%= @device.ip_host %><br>
+  <strong>Device Type:</strong>
+  <%= @device.device_type %>
+</p>
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
