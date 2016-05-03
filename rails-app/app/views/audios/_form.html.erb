@@ -1,28 +1,26 @@
 <%= form_for(@audio) do |f| %>
-  <% if @audio.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@audio.errors.count, "error") %> prohibited this audio from being saved:</h2>
+  <div class = "input-container">
+    <div class="field">
+      <%= f.text_field :text, :placeholder => "Say something" %>
+    </div>
+    <%= button_tag(type: 'submit', class: "actions btn btn-primary") do %>
+     <i class="glyphicon glyphicon-bullhorn"></i>
+    <% end %>
+  </div>
+  <div class="checkbox">
+    <% if @audio.id.present? # Only for the edit page %>
+      <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
+    <% else # Shows on the new audio page %>
+      <p><%= f.label 'Save?' %>
+      <%= f.check_box :store, {checked: false} %></p>
+    <% end %>
+  </div>
 
-      <ul>
+  <% if @audio.errors.any? %>
+    <div id="error_message">
       <% @audio.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <%= message %>
       <% end %>
-      </ul>
     </div>
   <% end %>
-
-  <div class="test">
-      <div class="field">
-      <p><%= f.label :text %><br>
-      <%= f.text_field :text, :placeholder => "Say something" %></p>
-      <% if @audio.id.present? # Only for the edit page %>
-        <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
-      <% else # Shows on the new audio page %>
-        <p><%= f.label 'Save?' %>
-        <%= f.check_box :store, {checked: false} %></p>
-      <% end %>
-    </div>
-  <%= button_tag(type: 'submit', class: "actions btn btn-primary") do %>
-   <i class="glyphicon glyphicon-bullhorn"></i>
-  </div>
 <% end %>

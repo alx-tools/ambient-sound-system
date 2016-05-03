@@ -87,7 +87,11 @@ input {
   height: 32px;
 }
 
+<<<<<<< HEAD
 .test {
+=======
+.input-container {
+>>>>>>> master
   display: flex;
   flex-direction: row;
 }
@@ -119,11 +123,16 @@ div {
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
   display: table;
+  // Add width to maintain size. This is not the default behavior.
+  width: 100%;
 }
 
+#error_message {
+  color: $orange;
+}
+
+// The default error form.
 #error_explanation {
   width: 450px;
   border: 2px solid red;

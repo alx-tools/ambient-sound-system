@@ -18,6 +18,10 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
+# Change the error message for the text field.
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      audio:
+        # Make "text:" blank so that the default field name "Text" is omitted.
+        text: ""
