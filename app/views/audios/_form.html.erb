@@ -12,8 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
+    <p><%= f.label :text %><br>
+    <%= f.text_field :text %></p>
+    <% if @audio.id.present? # Only for the edit page %>
+      <p><%= f.check_box :store, {checked: true, hidden: true} %></p>
+    <% else # Shows on the new audio page %>
+      <p><%= f.label 'Save?' %>
+      <%= f.check_box :store, {checked: false} %></p>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit :"Create Audio" %>
