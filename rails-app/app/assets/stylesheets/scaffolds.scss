@@ -1,0 +1,155 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "compass";
+
+// Import theme fonts and set as variables.
+@import url(https://fonts.googleapis.com/css?family=Courgette|Raleway:400,700);
+$font-primary: Raleway, arial, helvetica, sans-serif;
+$font-secondary: Courgette, arial, helvetica, sans-serif;
+
+// Color pallete located at http://www.colourlovers.com/palette/92095/Giant_Goldfish.
+$blue: #69D2E7;
+$paleblue: #A7DBD8;
+$palegreen: #E0E4CC;
+$paleorange: #F38630;
+$orange: #FA6900;
+$lightgrey: #E6E6E6;
+$black: #333;
+
+// Add mixin for border-radius across browsers.
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+  background-color: white;
+  color: #333;
+  font-family: $font-primary;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: $font-secondary;
+  color: $blue;
+  font-size: 3.5em;
+}
+
+.form {
+  background-color: white;
+  width: 280px;
+  @include border-radius(10px);
+  padding: 20px;
+
+    h2 {
+      // Remove top margin to maintain even padding in the form.
+      margin-top: 0px;
+      font-size: 1.75em;
+    }
+}
+
+input {
+  width: 100%;
+  height: 32px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-primary {
+  color: white;
+  background-color: $blue;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  @include transition-duration(0.5s);
+    &:hover, &:focus {
+      background-color: darken($blue, 10%);
+    }
+}
+
+div {
+  &.field {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  display: table;
+  // Add width to maintain size. This is not the default behavior.
+  width: 100%;
+}
+
+#error_message {
+  color: $orange;
+}
+
+// The default error form.
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
