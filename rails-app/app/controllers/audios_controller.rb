@@ -2,11 +2,6 @@ require 'cgi' #Required for url_encode
 include ESpeak #Required for audio functionality
 
 class AudiosController < ApplicationController
-  before_action :set_audio, only: [:show, :edit, :update, :destroy]
-  before_action :create_audio_file, only: [:create]
-  after_action :say_text, only: [:create]
-  after_action :stream_audio, only: [:create]
-
   # GET /audios
   # GET /audios.json
   def index
@@ -16,6 +11,7 @@ class AudiosController < ApplicationController
   # GET /audios/1
   # GET /audios/1.json
   def show
+    @audio = set_audio
   end
 
   # GET /audios/new
@@ -25,18 +21,26 @@ class AudiosController < ApplicationController
 
   # GET /audios/1/edit
   def edit
+    @audio = set_audio
   end
 
   # POST /audios
   # POST /audios.json
   def create
-    @url = 'http://10.0.190.50:3000/' + @audio_path # Creates the url to store
+    @audio = Audio.new({ :text => audio_params[:text], :file => @file })
+    @file = set_file_name(audio_params[:text])
+    @url = @audio.url_path + @file # Creates the url to store
+    @file_path = @audio.path + @file
+    create_file = create_audio_file(audio_params[:text])
+    say_text
+    stream_audio
+
     respond_to do |format|
-      if audio_params[:store] == "0" && @audio_path.present? # If stream only
+      if audio_params[:store] == "0" && @file_path.present? # If stream only
+        delete_stream_file
         format.html { redirect_to new_audio_path, notice: 'Audio was sent for streaming.'}
         format.json { render :show, status: :created, location: @url }
-      elsif audio_params[:store] == "1" && @audio_path.present? # If stream and save
-        @audio = Audio.new({ :text => audio_params[:text], :url => @url })
+      elsif audio_params[:store] == "1" && @file_path.present? # If stream and save
         if @audio.save
           format.html { redirect_to @audio, notice: 'Audio was successfully created.' }
           format.json { render :show, status: :created, location: @url }
@@ -52,32 +56,32 @@ class AudiosController < ApplicationController
   end
 
   def ass_bot
+    @audio = Audio.new
+    @file = set_file_name(params[:text])
+    @url = @audio.url_path + @file # Creates the url to store
+    @file_path = @audio.path + @file
+    create_file = create_audio_file(params[:text])
+    said = say_text
+    stream = stream_audio
 
-    @speech = Speech.new(params[:text])
-    @speech.speak # invokes espeak
-    @speech.save("public/audio/ass.mp3") # invokes espeak + lame
-
-    # CHANGE THE --address IP TO YOUR MACHINE'S EXTERNAL IP
-    @err1 = Thread.new{ @cast1 = `castnow --address 10.0.190.83 http://10.0.190.38:9292/audio/ass.mp3`}
-    @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 http://10.0.190.38:9292/audio/ass.mp3`}
-    @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 http://10.0.190.38:9292/audio/ass.mp3`}
-
-
-    respond_to do |format|
-      res = {
-          :text => "Success!"
-      }
-      format.json { render :json => res, :status => 200 }
-    end
+    res = {
+        :text => "Success!",
+        :status => 200
+    }
+    render json: res
   end
 
   # PATCH/PUT /audios/1
   # PATCH/PUT /audios/1.json
   def update
+    @file = set_file_name
+    @audio = set_audio
+    @delete_file = delete_audio_file
+    @create_file = create_audio_file(audio_params[:text])
     respond_to do |format|
-      if @audio.update(audio_params)
+      if @audio.update({ :text => audio_params[:text], :file => @file })
         format.html { redirect_to @audio, notice: 'Audio was successfully created.' }
-        format.json { render :show, status: :ok, location: 'http://10.0.190.50/' + @audio_path }
+        format.json { render :show, status: :ok, location: @audio.url_path + @file }
       else
         format.html { render :edit }
         format.json { render json: @audio.errors, status: :unprocessable_entity }
@@ -88,6 +92,8 @@ class AudiosController < ApplicationController
   # DELETE /audios/1
   # DELETE /audios/1.json
   def destroy
+    @audio = set_audio
+    @delete_file = delete_audio_file
     @audio.destroy
     respond_to do |format|
       format.html { redirect_to audios_url, notice: 'Audio was successfully destroyed.' }
@@ -97,19 +103,26 @@ class AudiosController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def set_file_name(text)
+      text.downcase.tr(" ", "_").gsub(/[^0-9A-Za-z_]/, '') + ".mp3"
+    end
+
     def set_audio
-      @audio = Audio.find(params[:id])
+      Audio.find(params[:id])
     end
 
     # Create the audio files
-    def create_audio_file
-      @speech = Speech.new(audio_params[:text])
-      @audio_path = "audio/" + audio_params[:text].downcase.tr(" ", "_").gsub(/[^0-9A-Za-z_]/, '') + ".mp3"
-      @speech.save("public/" + @audio_path) # invokes espeak + lame
+    def create_audio_file(text)
+      @speech = Speech.new(text)
+      @speech.save(@file_path) # invokes espeak + lame
     end
 
     def delete_audio_file
+      Thread.new{ `rm #{@audio.file_path}` }
+    end
 
+    def delete_stream_file
+      Thread.new{ sleep(1.minute); `rm #{@file_path}`}
     end
 
     # Immediately speaks the text
@@ -125,11 +138,15 @@ class AudiosController < ApplicationController
       # @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 #{@url}`}
       # @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 #{@url}`}
       # Roku Command
-      # @err4 = Thread.new{`curl -d '' 'http://<ip or host>:8060/launch/17846?streamformat=mp3&url=#{enc_url}'`}
+      @err4 = Thread.new{`curl -d '' 'http://192.168.1.104:8060/launch/17846?streamformat=mp3&url=#{enc_url}'`}
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def audio_params
-      params.require(:audio).permit(:text, :store)
+      if !params[:text]
+        params.require(:audio).permit(:text, :store)
+      else
+        params.permit(:text)
+      end
     end
 end
