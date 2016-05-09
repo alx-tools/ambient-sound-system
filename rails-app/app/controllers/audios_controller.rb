@@ -138,7 +138,7 @@ class AudiosController < ApplicationController
       # @err2 = Thread.new{ @cast2 = `castnow --address 10.0.190.67 #{@url}`}
       # @err3 = Thread.new{ @cast3 = `castnow --address 10.0.190.63 #{@url}`}
       # Roku Command
-      @err4 = Thread.new{`curl -d '' 'http://192.168.1.104:8060/launch/17846?streamformat=mp3&url=#{enc_url}'`}
+      # @err4 = Thread.new{`curl -d '' 'http://<IP or HOSTNAME>:8060/launch/17846?streamformat=mp3&url=#{enc_url}'`}
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
