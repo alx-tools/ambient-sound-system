@@ -27,7 +27,7 @@ class AudiosController < ApplicationController
   # POST /audios
   # POST /audios.json
   def create
-    @audio = Audio.new({ :text => audio_params[:text], :file => @file })
+    @audio = Audio.new
     @file = set_file_name(audio_params[:text])
     @url = @audio.url_path + @file # Creates the url to store
     @file_path = @audio.path + @file
@@ -41,9 +41,10 @@ class AudiosController < ApplicationController
         format.html { redirect_to new_audio_path, notice: 'Audio was sent for streaming.'}
         format.json { render :show, status: :created, location: @url }
       elsif audio_params[:store] == "1" && @file_path.present? # If stream and save
+        @audio = Audio.new({ :text => audio_params[:text], :file => @file })
         if @audio.save
           format.html { redirect_to @audio, notice: 'Audio was successfully created.' }
-          format.json { render :show, status: :created, location: @url }
+          format.json { render :show, status: :created, location: @file }
         else
           format.html { render :new }
           format.json { render json: @audio.errors, status: :unprocessable_entity }
