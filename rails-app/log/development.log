@@ -1,0 +1,1112 @@
+
+
+Started GET "/audios/new" for ::1 at 2016-05-03 11:27:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (49.1ms)
+  Rendered audios/new.html.erb within layouts/application (68.2ms)
+DEPRECATION WARNING on line 87 of /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+
+DEPRECATION WARNING on line 92 of /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+
+Completed 200 OK in 20650ms (Views: 20560.6ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:28:08 -0700
+
+
+Started GET "/audios/new" for ::1 at 2016-05-03 11:31:09 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.2ms)
+  Rendered audios/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:31:09 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:31:10 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:31:12 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vft4ikPTupn5rnBPn1YkEi0TJ2Rwg9bZ8o38cDmE5l1xktiBbi7E1T0cAGk6rxV4wfw+fjsCS9PniwUn1Cy7jA==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (33.2ms)[0m  BEGIN
+  [1m[36m (11.4ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (2.5ms)
+  Rendered audios/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1424ms (Views: 45.9ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/audios/new" for ::1 at 2016-05-03 11:31:38 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.1ms)
+  Rendered audios/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:31:45 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDrp69LcGhWk63oKikqS7p6MP3jjlqHdZC3Tw6EqcixUU0ng/yFkWWBZCiwvs6OEcmMmYqgXPNdxKyqUTIIv/Q==", "audio"=>{"text"=>"hello"}, "button"=>""}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (57.9ms)[0m  [1mINSERT INTO "audios" ("text", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["text", "hello"], ["created_at", "2016-05-03 18:31:47.300550"], ["updated_at", "2016-05-03 18:31:47.300550"]]
+  [1m[35m (614.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/audios/980190969
+Completed 302 Found in 2338ms (ActiveRecord: 672.9ms)
+
+
+Started GET "/audios/980190969" for ::1 at 2016-05-03 11:31:48 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"980190969"}
+  [1m[36mAudio Load (1.0ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 980190969]]
+  Rendered audios/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 99ms (Views: 67.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/new" for ::1 at 2016-05-03 11:32:27 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.2ms)
+  Rendered audios/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 38.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:32:27 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:32:29 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (1.5ms)
+  Rendered audios/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 819ms (Views: 40.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:44:56 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.8ms)
+
+NoMethodError (undefined method `messages=' for #<ActiveModel::Errors:0x007f8a1980ae08>):
+  app/controllers/audios_controller.rb:30:in `create'
+
+
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.3ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (121.3ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/bennettbuchanan/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (276.8ms)
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:49:44 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (1.9ms)
+  Rendered audios/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 1011ms (Views: 114.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:49:45 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:49:46 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:50:05 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (2.2ms)
+  Rendered audios/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 846ms (Views: 51.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:50:05 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:50:05 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:50:06 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:50:22 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (2.5ms)
+  Rendered audios/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 837ms (Views: 50.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:50:23 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:55:19 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (1.6ms)
+  Rendered audios/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 814ms (Views: 44.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:55:20 -0700
+
+
+Started POST "/audios" for ::1 at 2016-05-03 11:55:24 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXQd41VNcvz9aMJugKecCLWk6zBUh2ab1XW6/W6vXirpHb3oeLAMsDnaskglXq1iWUvyKh8G+5HAc0OqgwcD+w==", "audio"=>{"text"=>""}, "button"=>""}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  Rendered audios/_form.html.erb (1.6ms)
+  Rendered audios/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 819ms (Views: 44.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/scaffolds.self-ec56b046f373e67fff3ed53d796332384e48fcb52c89e48c7f01920a26f46e6a.css?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-03 11:55:25 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for ::1 at 2016-05-03 11:55:25 -0700
+  [1m[36m (3.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDevices (20160503003850)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "devices" ("id" serial primary key, "location" character varying, "ip_host" character varying, "device_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160503003850"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAudios (20160503004144)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "audios" ("id" serial primary key, "text" character varying, "url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160503004144"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'audios'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'devices'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:33:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (18.4ms)
+  Rendered audios/new.html.erb within layouts/application (23.2ms)
+DEPRECATION WARNING on line 87 of /Users/rick/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+
+DEPRECATION WARNING on line 92 of /Users/rick/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+
+Completed 200 OK in 9623ms (Views: 9604.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:33:40 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.2ms)
+  Rendered audios/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e6cd444139e72db3779a3ccc203fbafa065b5ba074aa8b8140ac796388eb60ce.css?body=1" for 127.0.0.1 at 2016-05-03 15:33:40 -0700
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fc969dc1c6ff531abcf368089dcbaf5775133b0626ff56b52301a059fc0f9e1e.woff" for 127.0.0.1 at 2016-05-03 15:33:40 -0700
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:33:57 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LUsjxN1vBOr1ELH85eeuy8p9NM/y+D4N2GEZ+P6nAgIR1Ae2tedN8U/Vc2cYmtw4MfTz8EfEVu7lLNuSl8R44Q==", "audio"=>{"text"=>"I will not save this.", "store"=>"0"}, "button"=>""}
+Redirected to http://localhost:3000/audios/new
+Completed 302 Found in 2004ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:33:59 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.3ms)
+  Rendered audios/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:34:07 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oLuHwaF4bzmgYJBIJOmeyUIlq5+ER2ApR+8gZ+2TAeScJKOzyfAmIhqlUtPZlOw6uaxsoDF7CMp6ouINhPB7Bw==", "audio"=>{"text"=>"I will save this one.", "store"=>"1"}, "button"=>""}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "audios" ("text", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "I will save this one."], ["url", "http://10.0.190.50:3000/audio/i_will_save_this_one.mp3"], ["created_at", "2016-05-03 22:34:07.560601"], ["updated_at", "2016-05-03 22:34:07.560601"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/audios/1
+Completed 302 Found in 1697ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/audios/1" for 127.0.0.1 at 2016-05-03 15:34:09 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.5ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered audios/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.6ms)
+
+
+Started GET "/audios/1" for 127.0.0.1 at 2016-05-03 15:35:15 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAudio Load (0.3ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.6ms)
+
+
+Started GET "/audios/1" for 127.0.0.1 at 2016-05-03 15:35:26 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAudio Load (0.5ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.2ms)
+
+
+Started GET "/audios/1" for 127.0.0.1 at 2016-05-03 15:35:40 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAudio Load (0.4ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered audios/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.6ms)
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:35:46 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oLuHwaF4bzmgYJBIJOmeyUIlq5+ER2ApR+8gZ+2TAeScJKOzyfAmIhqlUtPZlOw6uaxsoDF7CMp6ouINhPB7Bw==", "audio"=>{"text"=>"I will save this one.", "store"=>"1"}, "button"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "audios" ("text", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["text", "I will save this one."], ["url", "http://10.0.190.50:3000/audio/i_will_save_this_one.mp3"], ["created_at", "2016-05-03 22:35:46.504040"], ["updated_at", "2016-05-03 22:35:46.504040"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/audios/2
+Completed 302 Found in 1980ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:35:48 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.4ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.7ms)
+
+
+Started GET "/audios/" for 127.0.0.1 at 2016-05-03 15:36:25 -0700
+Processing by AudiosController#index as HTML
+  [1m[36mAudio Load (0.6ms)[0m  [1mSELECT "audios".* FROM "audios"[0m
+  Rendered audios/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:38:17 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.4ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.1ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:38:18 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAudio Load (0.2ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.3ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:38:57 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.3ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.6ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:39:03 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAudio Load (0.3ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.9ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:39:03 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.3ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(@audio) );...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.7ms)
+
+
+Started GET "/audios/" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+Processing by AudiosController#index as HTML
+  [1m[36mAudio Load (0.3ms)[0m  [1mSELECT "audios".* FROM "audios"[0m
+  Rendered audios/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/scaffolds.self-e6cd444139e72db3779a3ccc203fbafa065b5ba074aa8b8140ac796388eb60ce.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/devices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:08 -0700
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:41:10 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.2ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(audio) );@...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.7ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (84.0ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:41:11 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAudio Load (0.3ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Edit', edit_audio_path(audio) );@...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Back', audios_path );@output_buff...
+...                               ^
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: unterminated string meets end of file
+/Users/rick/ambient-sound-system/rails-app/app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/audios/show.html.erb:9: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:10: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/audios/show.html.erb:11: unterminated string meets end of file
+  app/views/audios/show.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.5ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:41:44 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAudio Load (0.3ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `audio' for #<#<Class:0x007f8869c85818>:0x007f886bb0b210>
+Did you mean?  @audio):
+     6: </p>
+     7: 
+     8: <%= link_to 'Download', @audio.url %> |
+     9: <%= link_to 'Edit', edit_audio_path(audio) %> |
+    10: <%= link_to 'Back', audios_path %>
+  app/views/audios/show.html.erb:9:in `_app_views_audios_show_html_erb___2356264900005803197_70111949508140'
+
+
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.0ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.5ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rick/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.9ms)
+
+
+Started GET "/audios/2" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAudio Load (0.3ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered audios/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/audios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/scaffolds.self-e6cd444139e72db3779a3ccc203fbafa065b5ba074aa8b8140ac796388eb60ce.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/audios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/devices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-03 15:41:56 -0700
+
+
+Started GET "/audios" for 127.0.0.1 at 2016-05-03 15:42:01 -0700
+Processing by AudiosController#index as HTML
+  [1m[35mAudio Load (0.3ms)[0m  SELECT "audios".* FROM "audios"
+  Rendered audios/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:42:05 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.9ms)
+  Rendered audios/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:42:37 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DQ22TzbyXJ0dGjx8uS99rjyoAjKIfn1CNdNK0Cpd7OkxkpI9XnoVhqff/udEUg9dxyHFDT1CFaEInoi6Qz6WCg==", "audio"=>{"text"=>"I will not save this", "store"=>"0"}, "button"=>""}
+Redirected to http://localhost:3000/audios/new
+Completed 302 Found in 1997ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:42:39 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.4ms)
+  Rendered audios/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:42:47 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+3Fm5s7KNtlJmNb27c/Fe0jmRkrvJp/+X8PlFgVa9d7cuHp87NhwN/jocAmyk3mFqpeJp6A8pzEMs3+MXYRNA==", "audio"=>{"text"=>"I will save this one too.", "store"=>"0"}, "button"=>""}
+Redirected to http://localhost:3000/audios/new
+Completed 302 Found in 1976ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:42:49 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.3ms)
+  Rendered audios/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/audios" for 127.0.0.1 at 2016-05-03 15:43:01 -0700
+Processing by AudiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sKR9HyAjJxf4VsoEkI5uksd4xUGGBiCOov6OkFW1Hd+MO1ltSKtuDEKTCJ9t8xxhPPECfjM6SG2fs0z6PNZnPA==", "audio"=>{"text"=>"I will save this one also", "store"=>"1"}, "button"=>""}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "audios" ("text", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["text", "I will save this one also"], ["url", "http://10.0.190.50:3000/audio/i_will_save_this_one_also.mp3"], ["created_at", "2016-05-03 22:43:01.199663"], ["updated_at", "2016-05-03 22:43:01.199663"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/audios/3
+Completed 302 Found in 1993ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/3" for 127.0.0.1 at 2016-05-03 15:43:03 -0700
+Processing by AudiosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAudio Load (0.4ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered audios/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audios" for 127.0.0.1 at 2016-05-03 15:43:05 -0700
+Processing by AudiosController#index as HTML
+  [1m[36mAudio Load (0.6ms)[0m  [1mSELECT "audios".* FROM "audios"[0m
+  Rendered audios/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/audios/1" for 127.0.0.1 at 2016-05-03 15:43:10 -0700
+Processing by AudiosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UDC6tOJh0EkoxA1eCnhUOC4cpe86eWvCMXCeAIZx3KZsr57GiumZUpIBz8X3BSbL1ZVi0I9FAyEMPVxq7xKmRQ==", "id"=>"1"}
+  [1m[35mAudio Load (0.4ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "audios" WHERE "audios"."id" = $1  [["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/audios
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/audios" for 127.0.0.1 at 2016-05-03 15:43:10 -0700
+Processing by AudiosController#index as HTML
+  [1m[35mAudio Load (0.5ms)[0m  SELECT "audios".* FROM "audios"
+  Rendered audios/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/audios/2" for 127.0.0.1 at 2016-05-03 15:43:13 -0700
+Processing by AudiosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IpqDpbH8fnso51EZP0insKHYrDap/VUMff02Kh53EpEeBafX2XQ3YJIik4LCNdVDWlFrCRzBPe9AsPRAdxRocg==", "id"=>"2"}
+  [1m[36mAudio Load (0.5ms)[0m  [1mSELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "audios" WHERE "audios"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/audios
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/audios" for 127.0.0.1 at 2016-05-03 15:43:13 -0700
+Processing by AudiosController#index as HTML
+  [1m[36mAudio Load (0.5ms)[0m  [1mSELECT "audios".* FROM "audios"[0m
+  Rendered audios/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/audios/3" for 127.0.0.1 at 2016-05-03 15:43:16 -0700
+Processing by AudiosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Kkig74ftw1/bKWOWnKgSDx5ez59201CcXR4+cHTvHysW14Sd72WKRGHsoQ1h1WD85dcIoMPvOH9gU/waHYxlyA==", "id"=>"3"}
+  [1m[35mAudio Load (0.3ms)[0m  SELECT  "audios".* FROM "audios" WHERE "audios"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "audios" WHERE "audios"."id" = $1  [["id", 3]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/audios
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/audios" for 127.0.0.1 at 2016-05-03 15:43:16 -0700
+Processing by AudiosController#index as HTML
+  [1m[35mAudio Load (0.4ms)[0m  SELECT "audios".* FROM "audios"
+  Rendered audios/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/audios/new" for 127.0.0.1 at 2016-05-03 15:43:22 -0700
+Processing by AudiosController#new as HTML
+  Rendered audios/_form.html.erb (1.6ms)
+  Rendered audios/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
